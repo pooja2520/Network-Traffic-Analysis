@@ -1,1 +1,162 @@
-
+--------------------------------------------------
+o")~   Snort++ 3.1.82.0
+--------------------------------------------------
+Loading /etc/snort/snort.lua:
+Loading snort_defaults.lua:
+Finished snort_defaults.lua:
+	port_scan
+	smtp
+	ftp_server
+	ftp_data
+	js_norm
+	binder
+	references
+	classifications
+	ips
+	wizard
+	appid
+	file_policy
+	file_id
+	http2_inspect
+	http_inspect
+	ftp_client
+	dce_smb
+	s7commplus
+	modbus
+	mms
+	daq
+	dnp3
+	telnet
+	normalizer
+	netflow
+	stream_udp
+	trace
+	stream
+	active
+	alerts
+	decode
+	host_cache
+	host_tracker
+	hosts
+	network
+	packets
+	process
+	search_engine
+	so_proxy
+	output
+	stream_ip
+	stream_icmp
+	stream_tcp
+	stream_user
+	stream_file
+	arp_spoof
+	back_orifice
+	dns
+	imap
+	pop
+	rpc_decode
+	sip
+	ssh
+	ssl
+	cip
+	iec104
+	dce_tcp
+	dce_udp
+	dce_http_proxy
+	dce_http_server
+	gtp_inspect
+Finished /etc/snort/snort.lua:
+Loading file_id.rules_file:
+Loading file_magic.rules:
+Finished file_magic.rules:
+Finished file_id.rules_file:
+Loading ips.rules:
+Loading /etc/snort/rules/local.rules:
+Finished /etc/snort/rules/local.rules:
+Finished ips.rules:
+--------------------------------------------------
+ips policies rule stats
+              id  loaded  shared enabled    file
+               0     209       0     209    /etc/snort/snort.lua
+--------------------------------------------------
+rule counts
+       total rules loaded: 209
+               text rules: 209
+            option chains: 209
+            chain headers: 2
+--------------------------------------------------
+port rule counts
+             tcp     udp    icmp      ip
+     any       0       0       1       0
+   total       0       0       1       0
+--------------------------------------------------
+service rule counts          to-srv  to-cli
+                  file_id:      208     208
+                    total:      208     208
+--------------------------------------------------
+fast pattern groups
+                to_server: 1
+                to_client: 1
+--------------------------------------------------
+search engine (ac_bnfa)
+                instances: 2
+                 patterns: 416
+            pattern chars: 2508
+               num states: 1778
+         num match states: 370
+             memory scale: KB
+             total memory: 68.5879
+           pattern memory: 18.6973
+        match list memory: 27.3281
+        transition memory: 22.3125
+appid: MaxRss diff: 2944
+appid: patterns loaded: 300
+--------------------------------------------------
+pcap DAQ configured to passive.
+Commencing packet processing
+++ [0] eth1
+11/21-12:50:36.401507 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 31.129.13.75 -> 192.168.1.102
+11/21-12:51:01.072277 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 95.152.62.79 -> 192.168.1.102
+11/21-12:51:36.114903 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 113.95.134.73 -> 192.168.1.102
+11/21-12:52:07.936145 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} fe80::20f6:5d73:9cb2:1699 -> ff02::2
+11/21-12:54:22.273137 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 37.192.217.2 -> 192.168.1.102
+11/21-12:54:43.712796 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 103.200.87.205 -> 192.168.1.102
+11/21-12:54:43.747274 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 103.200.87.205 -> 192.168.1.102
+11/21-12:54:43.747276 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 103.200.87.205 -> 192.168.1.102
+11/21-12:54:43.749185 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 103.136.159.202 -> 192.168.1.102
+11/21-12:54:43.765078 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 106.196.85.90 -> 192.168.1.102
+11/21-12:54:43.819568 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 91.96.20.82 -> 192.168.1.102
+11/21-12:54:43.830129 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 91.96.20.82 -> 192.168.1.102
+11/21-12:54:43.833617 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 84.179.245.113 -> 192.168.1.102
+11/21-12:54:43.856807 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 102.218.172.201 -> 192.168.1.102
+11/21-12:54:43.856832 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 102.218.172.201 -> 192.168.1.102
+11/21-12:54:43.861630 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 91.96.20.82 -> 192.168.1.102
+11/21-12:54:43.863259 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 195.238.170.111 -> 192.168.1.102
+11/21-12:54:43.866120 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 91.230.221.1 -> 192.168.1.102
+11/21-12:54:43.881498 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 172.93.103.36 -> 192.168.1.102
+11/21-12:54:43.886256 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 172.93.103.36 -> 192.168.1.102
+11/21-12:54:43.890790 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 196.189.198.19 -> 192.168.1.102
+11/21-12:54:43.906154 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 154.208.47.63 -> 192.168.1.102
+11/21-12:54:43.910440 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 172.93.103.36 -> 192.168.1.102
+11/21-12:54:43.915300 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 172.93.103.36 -> 192.168.1.102
+11/21-12:54:43.917256 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 172.93.103.36 -> 192.168.1.102
+11/21-12:54:43.917268 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 172.93.103.36 -> 192.168.1.102
+11/21-12:54:43.931348 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 154.208.47.63 -> 192.168.1.102
+11/21-12:54:43.936371 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 154.208.47.63 -> 192.168.1.102
+11/21-12:54:43.967225 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 154.208.47.63 -> 192.168.1.102
+11/21-12:54:43.971214 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 102.208.164.58 -> 192.168.1.102
+11/21-12:54:43.972527 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 102.208.164.58 -> 192.168.1.102
+11/21-12:54:44.004207 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 102.208.164.58 -> 192.168.1.102
+11/21-12:54:44.018836 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 170.79.136.116 -> 192.168.1.102
+11/21-12:54:44.041051 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 170.79.136.116 -> 192.168.1.102
+11/21-12:54:44.243455 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 91.96.20.82 -> 192.168.1.102
+11/21-12:54:45.791013 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 37.238.8.19 -> 192.168.1.102
+11/21-12:54:48.252395 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 91.96.20.82 -> 192.168.1.102
+11/21-12:54:51.188109 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 45.65.158.71 -> 192.168.1.102
+11/21-12:54:51.248690 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 91.96.20.82 -> 192.168.1.102
+11/21-12:54:55.249953 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 91.96.20.82 -> 192.168.1.102
+11/21-12:55:03.246801 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 91.96.20.82 -> 192.168.1.102
+11/21-12:57:03.349511 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 91.96.20.82 -> 192.168.1.102
+11/21-12:57:04.351682 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 91.96.20.82 -> 192.168.1.102
+11/21-12:57:06.352058 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {ICMP} 91.96.20.82 -> 192.168.1.102
+11/21-12:57:10.354387 [**] [1:1000003:0] "ICMP packets were detected" [**] [Priority: 0] {IC
