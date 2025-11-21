@@ -1,4 +1,4 @@
-Network Traffic Analysis (Kali Linux, Wireshark, tcpdump, Snort IDS)
+**Network Traffic Analysis (Kali Linux, Wireshark, tcpdump, Snort IDS)**
 
 This project demonstrates complete Network Traffic Analysis (NTA) using Kali Linux.
 It includes packet capture, protocol analysis, and intrusion detection using:
